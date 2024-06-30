@@ -1,3 +1,5 @@
+import QueueSongCard from "./QueueSongCard";
+
 const songQueue = [
   {
     image: "/LatestEnglish/2.jpeg",
@@ -50,6 +52,20 @@ export default function SongQueue() {
   return (
     <section className="flex flex-col gap-2">
       <h2 className="p-4 text-2xl font-medium">Queue</h2>
+      <div className="flex h-full flex-col gap-2">
+        {songQueue.map((song, index) => {
+          return (
+            <div key={song.name} className="flex w-full flex-row items-start">
+              <span className="pl-2 pr-4 py-2">{index + 1}</span>
+              <QueueSongCard
+                name={song.name}
+                image={song.image}
+                artist={song.artist}
+              />
+            </div>
+          );
+        })}
+      </div>
     </section>
   );
 }

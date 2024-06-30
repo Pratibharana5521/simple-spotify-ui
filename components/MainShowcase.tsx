@@ -5,10 +5,30 @@ import Cover3 from "@/public/MusicCovers/cover-3.jpg";
 
 export default function MainShowcase() {
   return (
-    <section className="flex flex-row items-center justify-center py-6 gap-4">
-      <Image className="rounded-md hover:scale-105" src={Cover2} alt="song 2" />
-      <Image className="rounded-md hover:scale-105" src={Cover3} alt="song 3" />
-      <Image className="rounded-md hover:scale-105" src={Cover1} alt="song 1" />
+    <section className="py-6">
+      <div className="grid grid-cols-3 items-center justify-center gap-4">
+        <div>
+          <Image
+            className="h-auto w-full rounded-md object-contain hover:scale-105"
+            src={Cover2}
+            alt="song 2"
+          />
+        </div>
+        <div>
+          <Image
+            className="h-auto w-full rounded-md object-contain hover:scale-105"
+            src={Cover3}
+            alt="song 3"
+          />
+        </div>
+        <div>
+          <Image
+            className="h-auto w-full rounded-md object-contain hover:scale-105"
+            src={Cover1}
+            alt="song 1"
+          />
+        </div>
+      </div>
     </section>
   );
 }

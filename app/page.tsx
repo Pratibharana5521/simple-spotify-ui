@@ -8,17 +8,17 @@ import { ScrollArea } from "@/components/ui/scroll-area";
 
 export default function Home() {
   return (
-    <main className="grid h-full grid-cols-3">
-      <ScrollArea className="col-span-2 flex h-full flex-col p-4">
+    <main className="grid h-full w-full grid-cols-3">
+      <ScrollArea className="col-span-2 flex h-full w-full flex-col px-4 pb-20">
         <MainShowcase />
         <LatestReleases />
         <PopularArtists />
         <LatestEnglish />
         <LatestHindi />
       </ScrollArea>
-      <div className="">
+      <ScrollArea className="flex h-full w-full flex-col px-4 pb-20">
         <SongQueue />
-      </div>
+      </ScrollArea>
     </main>
   );
 }

@@ -7,13 +7,15 @@ import { Button } from "./ui/button";
 
 export default function Header() {
   return (
-    <header className="sticky z-10 left-0 top-0 flex w-full flex-row justify-between py-2 px-4 bg-background">
+    <header className="bg-background sticky left-0 top-0 z-10 flex w-full flex-row justify-between px-4 py-2">
       <div className="flex flex-row items-center justify-center gap-10">
         <div className="flex flex-row items-center gap-2">
           <Image src={SpotifyLogo} width={50} height={50} alt="spotify logo" />
-          <h1 className="text-xl font-medium">Spotify</h1>
+          <h1 className="text-2xl font-medium">Spotify</h1>
         </div>
-        <button>favorites</button>
+        <Button variant={"link"} className="text-base">
+          Favourites
+        </Button>
       </div>
       <div className="flex flex-row items-center gap-4">
         <div className="relative flex flex-row">

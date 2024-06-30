@@ -24,11 +24,11 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={cn(
-          "bg-background dark flex h-svh font-sans antialiased",
+          "bg-background dark h-svh font-sans antialiased",
           fontSans.variable,
         )}
       >
-        <div className="h-full w-full overflow-clip">
+        <div className="h-full w-full overflow-hidden">
           <Header />
           {children}
         </div>

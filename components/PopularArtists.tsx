@@ -49,7 +49,7 @@ export default function PopularArtists() {
             return (
               <CarouselItem
                 key={artist.name}
-                className="flex basis-1/5 flex-col items-center justify-center gap-2"
+                className="flex basis-1/3 flex-col items-center justify-center gap-2 lg:basis-1/4 xl:basis-1/5"
               >
                 <Image
                   className="size-44 rounded-full"

@@ -13,14 +13,14 @@ export default function QueueSongCard({
   artist: string;
 }) {
   return (
-    <Card className="flex flex-row">
+    <Card className="flex w-full flex-row">
       <CardHeader className="p-2">
         <Image src={image} alt={name} width={120} height={120} />
       </CardHeader>
       <CardContent className="flex w-full flex-row justify-between p-2">
-        <div className="flex flex-col justify-between">
-            <CardTitle className="text-lg">{name}</CardTitle>
-            <h3>{artist}</h3>
+        <div className="flex flex-col">
+          <CardTitle className="text-lg">{name}</CardTitle>
+          <span className="opacity-90">{artist}</span>
         </div>
         <Button size={"icon"} variant={"ghost"}>
           <HeartIcon />

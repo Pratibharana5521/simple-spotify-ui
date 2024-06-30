@@ -27,7 +27,7 @@ export default function LatestSongs({
             return (
               <CarouselItem
                 key={song.name}
-                className="flex basis-1/5 flex-col items-center justify-center gap-2"
+                className="flex basis-1/3 flex-col items-center justify-center gap-2 lg:basis-1/4 xl:basis-1/5"
               >
                 <Image
                   className="size-44 rounded-md"
@@ -36,7 +36,7 @@ export default function LatestSongs({
                   width={300}
                   height={300}
                 />
-                <div className=" flex flex-col justify-center items-center">
+                <div className="flex flex-col items-center justify-center">
                   <h3 className="text-lg font-medium">{song.name}</h3>
                   <span className="opacity-90">{song.artist}</span>
                 </div>
